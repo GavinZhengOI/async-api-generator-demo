@@ -3,7 +3,7 @@ In order to use this template, we just need to change the config file. First, go
 
 Then, change the two channels (`temperature/dropped`, `temperature/risen`) according to your needs. The default property type is `string`; you can change that if you want another data type.
 
-Save your changes, and use `npm install` to install the required packages. After installation, use `npm run test:generate` to generate the code. The code should be located at `test/project/client.py`. Use `npm run test:start` to run the code.
+Save your changes, and use `npm install` to install the required packages. After installation, use `npm run test:generate` to generate the code. The code should be located at `test/project/client.py`. And there should also be a `requirements.txt` file at `test/project/requirement.txt`. Use `pip install -r test/project/requirement.txt` to install all the dependencies. Use `npm run test:start` to run the code.
 
 You should be able to see output from the terminal like this:
 
