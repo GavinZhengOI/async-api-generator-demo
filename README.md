@@ -22,4 +22,13 @@ Temperature rise detected 86301245 sent to temperature/risen
 ```
 Each second, the program will generate two messages and send them through two channels respectively. One is for temperature rise and the other is for temperature fall.
 
-To ensure you send out messages successfully, use `sudo docker run hivemq/mqtt-cli sub -t temperature/risen -h test.mosquitto.org` to subscribe to the channel. As you may have noticed, the `-t` argument indicates the channel to subscribe to, and the `-h` argument indicates the server. Change these according to your needs.
+To ensure you send out messages successfully, use `sudo docker run hivemq/mqtt-cli sub -t temperature/risen -h test.mosquitto.org` to subscribe to the channel. As you may have noticed, the `-t` argument indicates the channel to subscribe to, and the `-h` argument indicates the server. Change these according to your needs. After starting the container, you should see the messages recieved:
+```
+51049120
+73676234
+10859740
+21158421
+30965067
+26755377
+92725541
+```
